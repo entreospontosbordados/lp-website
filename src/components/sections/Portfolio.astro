@@ -1,0 +1,164 @@
+---
+import Container from '../ui/Container.astro';
+import Card from '../ui/Card.jsx';
+import Button from '../ui/Button.jsx';
+---
+
+<section id="portfolio" class="py-20 lg:py-32 bg-gradient-to-br from-neutral-50 to-primary-50/30">
+  <Container>
+    <!-- Header -->
+    <div class="text-center mb-16">
+      <h2 class="font-serif text-3xl lg:text-4xl xl:text-5xl font-bold text-neutral-900 mb-4">
+        Galeria de 
+        <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary-600 to-secondary-600">
+          Bordados
+        </span>
+      </h2>
+      <p class="text-lg text-neutral-600 max-w-2xl mx-auto">
+        Cada peça conta uma história única. Veja alguns dos bordados personalizados que criamos 
+        para momentos especiais de nossos clientes.
+      </p>
+      <div class="w-20 h-1 bg-gradient-to-r from-primary-500 to-secondary-500 rounded-full mx-auto mt-6"></div>
+    </div>
+    
+    <!-- Filter tabs -->
+    <div class="flex flex-wrap justify-center gap-4 mb-12">
+      <button class="px-6 py-3 bg-primary-600 text-white rounded-full font-medium transition-all hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2">
+        Todos
+      </button>
+      <button class="px-6 py-3 bg-white text-neutral-600 rounded-full font-medium border border-neutral-300 transition-all hover:bg-neutral-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2">
+        Porta Aliança
+      </button>
+      <button class="px-6 py-3 bg-white text-neutral-600 rounded-full font-medium border border-neutral-300 transition-all hover:bg-neutral-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2">
+        Porta Maternidade
+      </button>
+      <button class="px-6 py-3 bg-white text-neutral-600 rounded-full font-medium border border-neutral-300 transition-all hover:bg-neutral-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2">
+        Decorativos
+      </button>
+    </div>
+    
+    <!-- Portfolio Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+      <!-- Portfolio Item 1 -->
+      <Card client:load padding="none" className="group cursor-pointer overflow-hidden">
+        <div class="relative overflow-hidden">
+          <!-- SUBSTITUIR: Foto de porta aliança bordado com flores delicadas -->
+          <img 
+            src="https://images.unsplash.com/photo-1606800052052-a08af7148866?w=400&h=300&fit=crop" 
+            alt="Porta aliança bordado com flores delicadas"
+            class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110"
+            loading="lazy"
+          />
+          <div class="absolute inset-0 bg-gradient-to-t from-neutral-900/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+          <div class="absolute bottom-4 left-4 right-4 text-white transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300 opacity-0 group-hover:opacity-100">
+            <h3 class="font-semibold text-lg">Porta Aliança Floral</h3>
+            <p class="text-sm text-neutral-200">Bordado delicado com flores em tons pastéis</p>
+          </div>
+        </div>
+      </Card>
+      
+      <!-- Portfolio Item 2 -->
+      <Card client:load padding="none" className="group cursor-pointer overflow-hidden">
+        <div class="relative overflow-hidden">
+          <!-- SUBSTITUIR: Foto de porta maternidade com bordado personalizado -->
+          <img 
+            src="https://images.unsplash.com/photo-1515488042361-ee00e0ddd4e4?w=400&h=300&fit=crop" 
+            alt="Porta maternidade com bordado personalizado"
+            class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110"
+            loading="lazy"
+          />
+          <div class="absolute inset-0 bg-gradient-to-t from-neutral-900/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+          <div class="absolute bottom-4 left-4 right-4 text-white transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300 opacity-0 group-hover:opacity-100">
+            <h3 class="font-semibold text-lg">Porta Maternidade</h3>
+            <p class="text-sm text-neutral-200">Bordado personalizado com nome do bebê</p>
+          </div>
+        </div>
+      </Card>
+      
+      <!-- Portfolio Item 3 -->
+      <Card client:load padding="none" className="group cursor-pointer overflow-hidden">
+        <div class="relative overflow-hidden">
+          <!-- SUBSTITUIR: Foto de bordado decorativo para casa -->
+          <img 
+            src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=300&fit=crop" 
+            alt="Bordado decorativo para casa"
+            class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110"
+            loading="lazy"
+          />
+          <div class="absolute inset-0 bg-gradient-to-t from-neutral-900/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+          <div class="absolute bottom-4 left-4 right-4 text-white transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300 opacity-0 group-hover:opacity-100">
+            <h3 class="font-semibold text-lg">Bordado Decorativo</h3>
+            <p class="text-sm text-neutral-200">Peça única para decoração de ambiente</p>
+          </div>
+        </div>
+      </Card>
+      
+      <!-- Portfolio Item 4 -->
+      <Card client:load padding="none" className="group cursor-pointer overflow-hidden">
+        <div class="relative overflow-hidden">
+          <!-- SUBSTITUIR: Foto de porta aliança elegante com bordado clássico -->
+          <img 
+            src="https://images.unsplash.com/photo-1583939003579-730e3918a45a?w=400&h=300&fit=crop" 
+            alt="Porta aliança elegante com bordado clássico"
+            class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110"
+            loading="lazy"
+          />
+          <div class="absolute inset-0 bg-gradient-to-t from-neutral-900/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+          <div class="absolute bottom-4 left-4 right-4 text-white transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300 opacity-0 group-hover:opacity-100">
+            <h3 class="font-semibold text-lg">Porta Aliança Clássico</h3>
+            <p class="text-sm text-neutral-200">Design elegante para cerimônias tradicionais</p>
+          </div>
+        </div>
+      </Card>
+      
+      <!-- Portfolio Item 5 -->
+      <Card client:load padding="none" className="group cursor-pointer overflow-hidden">
+        <div class="relative overflow-hidden">
+          <!-- SUBSTITUIR: Foto de porta maternidade com tema safari -->
+          <img 
+            src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400&h=300&fit=crop" 
+            alt="Porta maternidade com tema safari"
+            class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110"
+            loading="lazy"
+          />
+          <div class="absolute inset-0 bg-gradient-to-t from-neutral-900/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+          <div class="absolute bottom-4 left-4 right-4 text-white transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300 opacity-0 group-hover:opacity-100">
+            <h3 class="font-semibold text-lg">Porta Maternidade Safari</h3>
+            <p class="text-sm text-neutral-200">Tema divertido com animais bordados</p>
+          </div>
+        </div>
+      </Card>
+      
+      <!-- Portfolio Item 6 -->
+      <Card client:load padding="none" className="group cursor-pointer overflow-hidden">
+        <div class="relative overflow-hidden">
+          <!-- SUBSTITUIR: Foto de bordado decorativo com mandala -->
+          <img 
+            src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400&h=300&fit=crop" 
+            alt="Bordado decorativo com mandala"
+            class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110"
+            loading="lazy"
+          />
+          <div class="absolute inset-0 bg-gradient-to-t from-neutral-900/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+          <div class="absolute bottom-4 left-4 right-4 text-white transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300 opacity-0 group-hover:opacity-100">
+            <h3 class="font-semibold text-lg">Mandala Bordada</h3>
+            <p class="text-sm text-neutral-200">Arte contemplativa em bordado</p>
+          </div>
+        </div>
+      </Card>
+    </div>
+    
+    <!-- CTA -->
+    <div class="text-center">
+      <Button 
+        client:load
+        variant="primary" 
+        size="lg"
+        href="https://wa.me/5547999999999?text=Olá! Gostaria de encomendar um bordado personalizado."
+        target="_blank"
+      >
+        Peça Seu Bordado Personalizado
+      </Button>
+    </div>
+  </Container>
+</section>

@@ -4,6 +4,8 @@ alwaysApply: true
 
 # Rule: Landing Page com Astro + React + Tailwind
 
+Sempre usar `yarn` para o gerenciamento das dependencias.
+
 ## Objetivo
 Construir landing pages responsivas, performáticas e escaláveis usando **Astro**, **React** e **TailwindCSS**, garantindo boas práticas de SEO, acessibilidade e componentização.
 
