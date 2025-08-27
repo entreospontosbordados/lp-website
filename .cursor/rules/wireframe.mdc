@@ -1,0 +1,121 @@
+# Landing Page - Portfólio de Bordados
+
+## [Hero Section]
+- **Objetivo:** Impactar visualmente e apresentar a artesã e o que ela oferece logo de início.
+- **Conteúdo:** 
+  - Imagem destaque (bordado ou foto da artesã trabalhando).
+  - Headline curta (ex: "Bordados únicos que contam histórias").
+  - Subheadline (ex: "Porta aliança, maternidade, peças decorativas e oficinas em Blumenau").
+  - Botões CTA: "Ver Produtos" + "Agendar Oficina".
+- **Design Notes:** 
+  - Layout fullscreen responsivo.
+  - Tipografia forte e acolhedora.
+  - Fundo limpo, cor clara ou textura suave de tecido/linha.
+
+---
+
+## [Sobre a Artesã]
+- **Objetivo:** Humanizar a marca e criar conexão com o visitante.
+- **Conteúdo:** 
+  - Foto da artesã.
+  - Mini biografia (paixão pelo bordado, propósito).
+  - CTA leve → "Conheça meu portfólio".
+- **Design Notes:**
+  - Sessão em duas colunas (foto + texto).
+  - Estilo caloroso, tom pessoal.
+
+---
+
+## [Portfólio / Galeria de Bordados]
+- **Objetivo:** Mostrar qualidade e variedade dos trabalhos.
+- **Conteúdo:** 
+  - Fotos organizadas por categorias: Porta Aliança | Porta Maternidade | Bordados Decorativos.
+  - Grade responsiva ou carrossel.
+  - CTA: "Peça o seu personalizado".
+- **Design Notes:**
+  - Grid de imagens com hover mostrando título.
+  - Imagens clicáveis com lightbox.
+
+---
+
+## [Produtos e Riscos para Bordar]
+- **Objetivo:** Exibir itens disponíveis para venda.
+- **Conteúdo:** 
+  - Cards de produtos: imagem, título, descrição breve, preço.
+  - Botão CTA: "Comprar agora" ou "Falar no WhatsApp".
+  - Filtro por tipo: Produtos prontos / Riscos digitais.
+- **Design Notes:**
+  - Cards padronizados.
+  - Sessão clara, bem organizada.
+
+---
+
+## [Oficinas em Blumenau]
+- **Objetivo:** Destacar a principal atividade atual da artesã.
+- **Conteúdo:** 
+  - Texto explicativo sobre oficinas (formato, público, valor agregado).
+  - Fotos de oficinas anteriores.
+  - Depoimentos de alunas.
+  - CTA: "Reserve sua vaga".
+- **Design Notes:**
+  - Layout com destaque para fotos em ambiente real.
+  - Blocos de depoimentos em estilo carrossel.
+
+---
+
+## [Curso Online - Teaser]
+- **Objetivo:** Capturar leads interessados no curso futuro.
+- **Conteúdo:** 
+  - Frase teaser: "Em breve, um curso online para você aprender bordado do zero".
+  - Formulário de email → "Quero ser avisado".
+- **Design Notes:**
+  - Seção menor, CTA claro.
+  - Fundo diferenciado (tom pastel) para destacar.
+
+---
+
+## [Depoimentos / Avaliações]
+- **Objetivo:** Prova social e credibilidade.
+- **Conteúdo:** 
+  - Depoimentos de clientes e alunas.
+  - Fotos dos bordados entregues ou das alunas.
+  - Classificação (estrelas, opcional).
+- **Design Notes:**
+  - Layout de cartões ou carrossel.
+  - Visual aconchegante e confiável.
+
+---
+
+## [Blog / Dicas de Bordado] (opcional)
+- **Objetivo:** Atrair visitantes via SEO e educar.
+- **Conteúdo:** 
+  - Lista de posts com título, resumo e imagem.
+  - Exemplos: "Como escolher um bordado para maternidade", "Significado do bordado no casamento".
+  - CTA discreto no final: "Veja nossas oficinas".
+- **Design Notes:**
+  - Grid simples de artigos.
+  - Layout limpo e leve.
+
+---
+
+## [Call-to-Action Final]
+- **Objetivo:** Reforçar conversão antes do rodapé.
+- **Conteúdo:** 
+  - Frase forte: "Transforme momentos em arte bordada".
+  - Botões CTA: "Falar no WhatsApp" | "Comprar Agora" | "Agendar Oficina".
+- **Design Notes:**
+  - Fundo destacado (ex: degradê suave).
+  - CTAs bem visíveis.
+
+---
+
+## [Rodapé]
+- **Objetivo:** Encerrar a página com informações úteis.
+- **Conteúdo:** 
+  - Links rápidos: Home | Produtos | Oficinas | Contato.
+  - Redes sociais: Instagram, Pinterest.
+  - Informações de contato (WhatsApp, email).
+  - Copyright.
+- **Design Notes:**
+  - Layout simples e elegante.
+  - Ícones sociais claros.

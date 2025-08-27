@@ -1,0 +1,96 @@
+---
+alwaysApply: true
+---
+
+# Rule: Landing Page com Astro + React + Tailwind
+
+## Objetivo
+Construir landing pages responsivas, performáticas e escaláveis usando **Astro**, **React** e **TailwindCSS**, garantindo boas práticas de SEO, acessibilidade e componentização.
+
+---
+
+## 🛠️ Tecnologias
+- **Astro** → base do projeto, geração estática e SSR quando necessário.
+- **React** → apenas para componentes interativos (ex: carrosséis, formulários, filtros).
+- **TailwindCSS** → estilização utilitária, responsiva e consistente.
+- **TypeScript** → segurança de tipos e padronização.
+
+---
+
+## 📂 Estrutura de Pastas
+    src/
+    ├─ components/ # Componentes reutilizáveis (Hero, Card, Footer, etc.)
+    │ ├─ ui/ # Componentes básicos (Button, Card, Input, etc.)
+    │ ├─ sections/ # Seções completas da landing (Hero, About, Portfolio)
+    │ └─ shared/ # Componentes globais (Navbar, Footer)
+    ├─ layouts/ # Layouts compartilhados (DefaultLayout.astro)
+    ├─ pages/ # Páginas (index.astro, contato.astro, etc.)
+    ├─ styles/ # Estilos globais (tailwind.css, variáveis)
+    └─ utils/ # Funções auxiliares (formatters, helpers)
+
+
+---
+
+## 🎨 Padrões de Design
+- Usar **Tailwind** para responsividade (breakpoints `sm`, `md`, `lg`, `xl`).  
+- **Spacing consistente** → `p-8`, `py-12`, `gap-6` (usar múltiplos de 4).  
+- **Tipografia** → `text-xl font-bold` para títulos, `text-base` para corpo.  
+- **Cores** → definidas no `tailwind.config.mjs` com tokens (ex: `primary`, `secondary`, `accent`).  
+- **Botões** devem ser componentes (`<Button />`) e reutilizados.  
+- Sempre incluir `hover`, `focus` e `active` states para acessibilidade.  
+
+---
+
+## ⚛️ Componentização
+- **Componentes UI** (botão, card, input) → React ou Astro.  
+- **Seções** (Hero, About, Portfolio, Products, Workshops, Testimonials, CTA, Footer) → Astro components.  
+- **Regra:**  
+  - Conteúdo estático → `.astro`  
+  - Interativo → `.jsx` com `client:load` ou `client:visible`.  
+
+Exemplo:
+
+    src/components/ui/Button.jsx
+    src/components/sections/Hero.astro
+    src/components/shared/Footer.astro
+
+---
+
+## 📐 Boas Práticas
+- Usar **layouts** (`DefaultLayout.astro`) para manter `<head>`, meta tags, fontes e header fixo.  
+- Sempre definir meta tags (`title`, `description`, `og:image`) para SEO.  
+- Utilizar imagens otimizadas no diretório `public/`.  
+- Criar variáveis de tema no `tailwind.config.mjs`.  
+- Nomear classes Tailwind de forma semântica e consistente.  
+- Reutilizar componentes ao invés de duplicar código.  
+- Usar **Astro Islands** (hydrate only where needed) para maximizar performance.  
+
+---
+
+## ✅ Checklist para cada seção
+- **Hero** → headline forte, subheadline, CTA duplo.  
+- **Sobre** → foto + mini bio.  
+- **Portfólio** → grid de imagens responsivas com lightbox.  
+- **Produtos** → cards com preço e botão de compra.  
+- **Oficinas** → texto, fotos, depoimentos + CTA “Reservar vaga”.  
+- **Curso Online (teaser)** → formulário de captura de email.  
+- **Depoimentos** → carrossel ou grid.  
+- **Blog (opcional)** → lista de posts, SEO friendly.  
+- **CTA Final** → frase motivadora + botões de ação.  
+- **Footer** → navegação secundária, contatos e redes sociais.  
+
+---
+
+## 🚀 Deploy e Performance
+- Hospedar no **Vercel** ou **Netlify**.  
+- Ativar **imagem otimizada** (`<Image />` do Astro).  
+- Usar fontes locais ou via Google Fonts com preload.  
+- Testar com **Lighthouse** e otimizar para **90+ score**.  
+
+---
+
+## 🔍 Convenções
+- Nomear componentes em **PascalCase** → `Hero.astro`, `ProductCard.jsx`.  
+- Classes utilitárias Tailwind → ordem recomendada: layout → spacing → typography → colors.  
+- Páginas sempre em lowercase → `index.astro`, `produtos.astro`.  
+- Evitar lógica duplicada, criar helpers em `utils/`.  
