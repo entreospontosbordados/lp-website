@@ -2,97 +2,114 @@
 alwaysApply: true
 ---
 
-# Rule: Landing Page com Astro + React + Tailwind
+You are an expert in JavaScript, TypeScript, Astro framework, Tailwind CSS, and shadcn/ui for scalable and modern web development.
 
-Sempre usar `yarn` para o gerenciamento das dependencias.
+**ALWAYS USE YARN AS DEPENDENCY MANAGER**
 
-## Objetivo
-Construir landing pages responsivas, performáticas e escaláveis usando **Astro**, **React** e **TailwindCSS**, garantindo boas práticas de SEO, acessibilidade e componentização.
+Key Principles
+- Write concise, technical responses with accurate Astro and React examples.
+- Leverage Astro's partial hydration and multi-framework support effectively.
+- Prioritize static generation and minimal JavaScript for optimal performance.
+- Use descriptive variable names and follow Astro's naming conventions.
+- Organize files using Astro's file-based routing system.
+- Apply modern design principles: clean layouts, clear hierarchy, proper whitespace, smooth interactions, and accessibility.
 
----
+Astro Project Structure
+- Use the recommended Astro project structure:
+  - src/
+    - components/
+    - layouts/
+    - pages/
+    - styles/
+  - public/
+  - astro.config.mjs
 
-## 🛠️ Tecnologias
-- **Astro** → base do projeto, geração estática e SSR quando necessário.
-- **React** → apenas para componentes interativos (ex: carrosséis, formulários, filtros).
-- **TailwindCSS** → estilização utilitária, responsiva e consistente.
-- **TypeScript** → segurança de tipos e padronização.
+Component Development
+- Create .astro files for Astro components.
+- Use framework-specific components (React, Vue, Svelte) when necessary.
+- Implement proper component composition and reusability.
+- Use Astro's component props for data passing.
+- Leverage Astro's built-in components like <Markdown /> when appropriate.
+- Use shadcn/ui React components for consistent, accessible, and modern UI.
 
----
+Routing and Pages
+- Utilize Astro's file-based routing system in the src/pages/ directory.
+- Implement dynamic routes using [...slug].astro syntax.
+- Use getStaticPaths() for generating static pages with dynamic routes.
+- Implement proper 404 handling with a 404.astro page.
 
-## 📂 Estrutura de Pastas
-    src/
-    ├─ components/ # Componentes reutilizáveis (Hero, Card, Footer, etc.)
-    │ ├─ ui/ # Componentes básicos (Button, Card, Input, etc.)
-    │ ├─ sections/ # Seções completas da landing (Hero, About, Portfolio)
-    │ └─ shared/ # Componentes globais (Navbar, Footer)
-    ├─ layouts/ # Layouts compartilhados (DefaultLayout.astro)
-    ├─ pages/ # Páginas (index.astro, contato.astro, etc.)
-    ├─ styles/ # Estilos globais (tailwind.css, variáveis)
-    └─ utils/ # Funções auxiliares (formatters, helpers)
+Content Management
+- Use Markdown (.md) or MDX (.mdx) files for content-heavy pages.
+- Leverage Astro's built-in support for frontmatter in Markdown files.
+- Implement content collections for organized content management.
 
+Styling with Tailwind CSS
+- Integrate Tailwind CSS with Astro @astrojs/tailwind
+- Use Tailwind utility classes extensively in Astro and React components.
+- Leverage Tailwind's responsive design utilities (sm:, md:, lg:, etc.).
+- Utilize Tailwind's color palette and spacing scale for consistency.
+- Implement custom theme extensions in tailwind.config.cjs when necessary.
+- Never use the @apply directive.
+- Combine Tailwind with shadcn/ui for production-ready, styled, and accessible components.
 
----
+shadcn/ui Best Practices
+- Use shadcn/ui components to build consistent, modern UIs.
+- Extend and customize components using Tailwind’s config.
+- Favor reusability and modularity—avoid inline overrides where possible.
+- Ensure accessibility (ARIA roles, keyboard navigation) in every UI component.
+- Animate interactions with framer-motion for smooth transitions.
 
-## 🎨 Padrões de Design
-- Usar **Tailwind** para responsividade (breakpoints `sm`, `md`, `lg`, `xl`).  
-- **Spacing consistente** → `p-8`, `py-12`, `gap-6` (usar múltiplos de 4).  
-- **Tipografia** → `text-xl font-bold` para títulos, `text-base` para corpo.  
-- **Cores** → definidas no `tailwind.config.mjs` com tokens (ex: `primary`, `secondary`, `accent`).  
-- **Botões** devem ser componentes (`<Button />`) e reutilizados.  
-- Sempre incluir `hover`, `focus` e `active` states para acessibilidade.  
+Performance Optimization
+- Minimize use of client-side JavaScript; leverage Astro's static generation.
+- Use the client:* directives judiciously for partial hydration:
+  - client:load for immediately needed interactivity
+  - client:idle for non-critical interactivity
+  - client:visible for components that should hydrate when visible
+- Implement proper lazy loading for images and other assets.
+- Utilize Astro's built-in asset optimization features.
 
----
+Data Fetching
+- Use Astro.props for passing data to components.
+- Implement getStaticPaths() for fetching data at build time.
+- Use Astro.glob() for working with local files efficiently.
+- Implement proper error handling for data fetching operations.
 
-## ⚛️ Componentização
-- **Componentes UI** (botão, card, input) → React ou Astro.  
-- **Seções** (Hero, About, Portfolio, Products, Workshops, Testimonials, CTA, Footer) → Astro components.  
-- **Regra:**  
-  - Conteúdo estático → `.astro`  
-  - Interativo → `.jsx` com `client:load` ou `client:visible`.  
+SEO and Meta Tags
+- Use Astro's <head> tag for adding meta information.
+- Implement canonical URLs for proper SEO.
+- Use the <SEO> component pattern for reusable SEO setups.
 
-Exemplo:
+Integrations and Plugins
+- Utilize Astro integrations for extending functionality (e.g., @astrojs/image).
+- Implement proper configuration for integrations in astro.config.mjs.
+- Use Astro's official integrations when available for better compatibility.
 
-    src/components/ui/Button.jsx
-    src/components/sections/Hero.astro
-    src/components/shared/Footer.astro
+Build and Deployment
+- Optimize the build process using Astro's build command.
+- Implement proper environment variable handling for different environments.
+- Use static hosting platforms compatible with Astro (Netlify, Vercel, etc.).
+- Implement proper CI/CD pipelines for automated builds and deployments.
 
----
+Testing
+- Implement unit tests for utility functions and helpers.
+- Use end-to-end testing tools like Cypress for testing the built site.
+- Implement visual regression testing if applicable.
 
-## 📐 Boas Práticas
-- Usar **layouts** (`DefaultLayout.astro`) para manter `<head>`, meta tags, fontes e header fixo.  
-- Sempre definir meta tags (`title`, `description`, `og:image`) para SEO.  
-- Utilizar imagens otimizadas no diretório `public/`.  
-- Criar variáveis de tema no `tailwind.config.mjs`.  
-- Nomear classes Tailwind de forma semântica e consistente.  
-- Reutilizar componentes ao invés de duplicar código.  
-- Usar **Astro Islands** (hydrate only where needed) para maximizar performance.  
+Accessibility
+- Ensure proper semantic HTML structure in Astro and React components.
+- Implement ARIA attributes where necessary.
+- Ensure keyboard navigation support for interactive elements.
 
----
+Key Conventions
+1. Follow Astro's Style Guide for consistent code formatting.
+2. Use TypeScript for enhanced type safety and developer experience.
+3. Implement proper error handling and logging.
+4. Leverage Astro's RSS feed generation for content-heavy sites.
+5. Use Astro's Image component for optimized image delivery.
 
-## ✅ Checklist para cada seção
-- **Hero** → headline forte, subheadline, CTA duplo.  
-- **Sobre** → foto + mini bio.  
-- **Portfólio** → grid de imagens responsivas com lightbox.  
-- **Produtos** → cards com preço e botão de compra.  
-- **Oficinas** → texto, fotos, depoimentos + CTA “Reservar vaga”.  
-- **Curso Online (teaser)** → formulário de captura de email.  
-- **Depoimentos** → carrossel ou grid.  
-- **Blog (opcional)** → lista de posts, SEO friendly.  
-- **CTA Final** → frase motivadora + botões de ação.  
-- **Footer** → navegação secundária, contatos e redes sociais.  
+Performance Metrics
+- Prioritize Core Web Vitals (LCP, FID, CLS) in development.
+- Use Lighthouse and WebPageTest for performance auditing.
+- Implement performance budgets and monitoring.
 
----
-
-## 🚀 Deploy e Performance
-- Hospedar no **Vercel** ou **Netlify**.  
-- Ativar **imagem otimizada** (`<Image />` do Astro).  
-- Usar fontes locais ou via Google Fonts com preload.  
-- Testar com **Lighthouse** e otimizar para **90+ score**.  
-
----
-
-## 🔍 Convenções
-- Nomear componentes em **PascalCase** → `Hero.astro`, `ProductCard.jsx`.  
-- Classes utilitárias Tailwind → ordem recomendada: layout → spacing → typography → colors.  
-- Páginas sempre em lowercase → `index.astro`, `produtos.astro`.  
-- Evitar lógica duplicada, criar helpers em `utils/`.  
+Refer to Astro, Tailwind, and shadcn/ui official documentation for detailed information on components, routing, and integrations for best practices.
