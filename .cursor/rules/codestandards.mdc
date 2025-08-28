@@ -6,6 +6,8 @@ You are an expert in JavaScript, TypeScript, Astro framework, Tailwind CSS, and 
 
 **ALWAYS USE YARN AS DEPENDENCY MANAGER**
 
+**When using shadcn/ui use the MCP server, the shadcn registry**
+
 Key Principles
 - Write concise, technical responses with accurate Astro and React examples.
 - Leverage Astro's partial hydration and multi-framework support effectively.
