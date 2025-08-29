@@ -4,22 +4,31 @@
 
 :root {
   --radius: 0.625rem;
+
   --background: 0 0% 100%;
   --foreground: 222.2 84% 4.9%;
+
   --card: 0 0% 100%;
   --card-foreground: 222.2 84% 4.9%;
+
   --popover: 0 0% 100%;
   --popover-foreground: 222.2 84% 4.9%;
+
   --primary: 222.2 47.4% 11.2%;
   --primary-foreground: 210 40% 98%;
+
   --secondary: 210 40% 96%;
   --secondary-foreground: 222.2 47.4% 11.2%;
+
   --muted: 210 40% 96%;
   --muted-foreground: 215.4 16.3% 46.9%;
+
   --accent: 210 40% 96%;
   --accent-foreground: 222.2 47.4% 11.2%;
+
   --destructive: 0 84.2% 60.2%;
   --destructive-foreground: 210 40% 98%;
+
   --border: 214.3 31.8% 91.4%;
   --input: 214.3 31.8% 91.4%;
   --ring: 222.2 84% 4.9%;
@@ -28,25 +37,210 @@
 .dark {
   --background: 222.2 84% 4.9%;
   --foreground: 210 40% 98%;
+
   --card: 222.2 84% 4.9%;
   --card-foreground: 210 40% 98%;
+
   --popover: 222.2 84% 4.9%;
   --popover-foreground: 210 40% 98%;
+
   --primary: 210 40% 98%;
   --primary-foreground: 222.2 47.4% 11.2%;
+
   --secondary: 217.2 32.6% 17.5%;
   --secondary-foreground: 210 40% 98%;
+
   --muted: 217.2 32.6% 17.5%;
   --muted-foreground: 215 20.2% 65.1%;
+
   --accent: 217.2 32.6% 17.5%;
   --accent-foreground: 210 40% 98%;
+
   --destructive: 0 62.8% 30.6%;
   --destructive-foreground: 210 40% 98%;
+
   --border: 217.2 32.6% 17.5%;
   --input: 217.2 32.6% 17.5%;
   --ring: 212.7 26.8% 83.9%;
 }
 
+/* =============================
+   THEMES CUSTOM
+============================= */
+
+/* 🌿 Natureza Sofisticada */
+:root[data-theme="natureza"] {
+  --background: 43 100% 87%;       /* #FFE9C0 */
+  --foreground: 0 0% 11%;          /* #1C1C1C */
+
+  --primary: 120 8% 33%;           /* #4F5B4F */
+  --primary-foreground: 43 100% 87%;
+
+  --secondary: 13 45% 52%;         /* #BE5E48 */
+  --secondary-foreground: 43 100% 87%;
+
+  --accent: 18 86% 65%;            /* #F08159 */
+  --accent-foreground: 0 0% 100%;
+
+  --muted: 129 7% 48%;             /* #748173 */
+  --muted-foreground: 0 0% 93%;
+
+  --card: 43 100% 87%;
+  --card-foreground: 0 0% 11%;
+
+  --popover: 43 100% 87%;
+  --popover-foreground: 0 0% 11%;
+
+  --border: 129 7% 48%;
+  --input: 129 7% 48%;
+  --ring: 18 86% 65%;
+  --destructive: 0 84% 60%;
+  --destructive-foreground: 0 0% 100%;
+}
+.dark[data-theme="natureza"] {
+  --background: 0 0% 11%;
+  --foreground: 43 100% 87%;
+}
+
+/* 🌅 Pôr do Sol */
+:root[data-theme="por-do-sol"] {
+  --background: 48 100% 99%;       /* #FFFDF9 */
+  --foreground: 0 0% 17%;          /* #2D2D2D */
+
+  --primary: 13 45% 52%;           /* #BE5E48 */
+  --primary-foreground: 0 0% 100%;
+
+  --secondary: 120 8% 33%;         /* #4F5B4F */
+  --secondary-foreground: 0 0% 100%;
+
+  --accent: 152 30% 73%;           /* #a8ccb3 */
+  --accent-foreground: 0 0% 11%;
+
+  --muted: 43 100% 87%;            /* #FFE9C0 */
+  --muted-foreground: 120 8% 33%;
+
+  --card: 48 100% 99%;
+  --card-foreground: 0 0% 17%;
+
+  --popover: 48 100% 99%;
+  --popover-foreground: 0 0% 17%;
+
+  --border: 120 8% 33%;
+  --input: 120 8% 33%;
+  --ring: 152 30% 73%;
+  --destructive: 0 84% 60%;
+  --destructive-foreground: 0 0% 100%;
+}
+.dark[data-theme="por-do-sol"] {
+  --background: 0 0% 17%;
+  --foreground: 48 100% 99%;
+}
+
+/* 🌱 Orgânico */
+:root[data-theme="organico"] {
+  --background: 43 100% 87%;
+  --foreground: 0 0% 17%;
+
+  --primary: 129 7% 48%;           /* #748173 */
+  --primary-foreground: 0 0% 100%;
+
+  --secondary: 152 30% 73%;        /* #a8ccb3 */
+  --secondary-foreground: 0 0% 11%;
+
+  --accent: 13 45% 52%;            /* #BE5E48 */
+  --accent-foreground: 0 0% 100%;
+
+  --muted: 30 20% 90%;             /* #EDE7DD */
+  --muted-foreground: 120 8% 33%;
+
+  --card: 43 100% 87%;
+  --card-foreground: 0 0% 17%;
+
+  --popover: 43 100% 87%;
+  --popover-foreground: 0 0% 17%;
+
+  --border: 129 7% 48%;
+  --input: 129 7% 48%;
+  --ring: 13 45% 52%;
+  --destructive: 0 84% 60%;
+  --destructive-foreground: 0 0% 100%;
+}
+.dark[data-theme="organico"] {
+  --background: 0 0% 17%;
+  --foreground: 43 100% 87%;
+}
+
+/* ☀️ Bege Solar */
+:root[data-theme="bege-solar"] {
+  --background: 48 100% 98%;       /* #FFFDF5 */
+  --foreground: 0 0% 23%;          /* #3B3B3B */
+
+  --primary: 43 100% 87%;          /* #FFE9C0 */
+  --primary-foreground: 120 8% 33%;
+
+  --secondary: 120 8% 33%;         /* #4F5B4F */
+  --secondary-foreground: 0 0% 100%;
+
+  --accent: 18 86% 65%;            /* #F08159 */
+  --accent-foreground: 0 0% 100%;
+
+  --muted: 152 30% 73%;            /* #a8ccb3 */
+  --muted-foreground: 0 0% 17%;
+
+  --card: 48 100% 98%;
+  --card-foreground: 0 0% 23%;
+
+  --popover: 48 100% 98%;
+  --popover-foreground: 0 0% 23%;
+
+  --border: 152 30% 73%;
+  --input: 152 30% 73%;
+  --ring: 18 86% 65%;
+  --destructive: 0 84% 60%;
+  --destructive-foreground: 0 0% 100%;
+}
+.dark[data-theme="bege-solar"] {
+  --background: 0 0% 23%;
+  --foreground: 43 100% 87%;
+}
+
+/* 🔥 Contraste Elegante */
+:root[data-theme="contraste"] {
+  --background: 48 60% 98%;        /* #FDFCF9 */
+  --foreground: 0 0% 12%;          /* #1F1F1F */
+
+  --primary: 18 86% 65%;           /* #F08159 */
+  --primary-foreground: 0 0% 100%;
+
+  --secondary: 129 7% 48%;         /* #748173 */
+  --secondary-foreground: 0 0% 100%;
+
+  --accent: 13 45% 52%;            /* #BE5E48 */
+  --accent-foreground: 0 0% 100%;
+
+  --muted: 30 20% 90%;             /* #EDE7DD */
+  --muted-foreground: 120 8% 33%;
+
+  --card: 48 60% 98%;
+  --card-foreground: 0 0% 12%;
+
+  --popover: 48 60% 98%;
+  --popover-foreground: 0 0% 12%;
+
+  --border: 30 20% 90%;
+  --input: 30 20% 90%;
+  --ring: 18 86% 65%;
+  --destructive: 0 84% 60%;
+  --destructive-foreground: 0 0% 100%;
+}
+.dark[data-theme="contraste"] {
+  --background: 0 0% 12%;
+  --foreground: 48 60% 98%;
+}
+
+/* =============================
+   BASE STYLES
+============================= */
 @layer base {
   * {
     @apply border-border outline-ring/50;
@@ -65,7 +259,6 @@
 .font-inter {
   font-family: 'Inter', system-ui, -apple-system, sans-serif;
 }
-
 .font-playfair {
   font-family: 'Playfair Display', Georgia, serif;
 }
@@ -87,78 +280,43 @@
   .animate-fade-in {
     animation: fadeIn 0.6s ease-in-out;
   }
-  
   .animate-slide-up {
     animation: slideUp 0.6s ease-out;
   }
-  
   .animate-scale-in {
     animation: scaleIn 0.4s ease-out;
   }
 }
 
-/* Custom animations */
+/* Animations */
 @keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
-
 @keyframes slideUp {
-  from {
-    opacity: 0;
-    transform: translateY(30px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
 }
-
 @keyframes scaleIn {
-  from {
-    opacity: 0;
-    transform: scale(0.95);
-  }
-  to {
-    opacity: 1;
-    transform: scale(1);
-  }
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
 }
 
-/* Smooth scroll behavior */
-html {
-  scroll-behavior: smooth;
-}
+/* Smooth scroll */
+html { scroll-behavior: smooth; }
 
-/* Custom scrollbar */
-::-webkit-scrollbar {
-  width: 8px;
-}
+/* Scrollbar */
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-track { @apply bg-slate-100; }
+::-webkit-scrollbar-thumb { @apply bg-rose-300 rounded-full; }
+::-webkit-scrollbar-thumb:hover { @apply bg-rose-400; }
 
-::-webkit-scrollbar-track {
-  @apply bg-slate-100;
-}
-
-::-webkit-scrollbar-thumb {
-  @apply bg-rose-300 rounded-full;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  @apply bg-rose-400;
-}
-
-/* Focus styles for better accessibility */
+/* Accessibility focus */
 .focus-visible:focus-visible {
   @apply outline-2 outline-offset-2 outline-rose-500;
 }
 
 /* Print styles */
 @media print {
-  .no-print {
-    display: none !important;
-  }
+  .no-print { display: none !important; }
 }
