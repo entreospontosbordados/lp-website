@@ -6,6 +6,8 @@ export default {
       fontFamily: {
         'inter': ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
         'playfair': ['Playfair Display', 'Georgia', 'serif'],
+        'means-web': ['Means Web', 'system-ui', '-apple-system', 'sans-serif'],
+        'bevellier': ['Bevellier', 'Georgia', 'serif'],
       },
       colors: {
         border: "hsl(var(--border))",

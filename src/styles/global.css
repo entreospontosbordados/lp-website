@@ -1,5 +1,54 @@
 @import 'tailwindcss';
 
+/* Fontes personalizadas do brand */
+@font-face {
+  font-family: 'Means Web';
+  src: url('/fonts/Means Web/Means Web Light.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Means Web';
+  src: url('/fonts/Means Web/Means Web Light Italic.otf') format('opentype');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Means Web';
+  src: url('/fonts/Means Web/Means Web Medium.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Means Web';
+  src: url('/fonts/Means Web/Means Web Medium Italic.otf') format('opentype');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Bevellier';
+  src: url('/fonts/Bevellier/Bevellier-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Bevellier';
+  src: url('/fonts/Bevellier/Bevellier-Italic.otf') format('opentype');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
 :root {
   --radius: 0.625rem;
 
@@ -247,12 +296,20 @@
   body {
     background-color: hsl(var(--background));
     color: hsl(var(--foreground));
-    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    font-family: 'Means Web', system-ui, -apple-system, sans-serif;
+    font-weight: 300; /* Light para corpo de texto */
     font-feature-settings: "rlig" 1, "calt" 1;
   }
   
   h1, h2, h3, h4, h5, h6 {
-    font-family: 'Playfair Display', Georgia, serif;
+    font-family: 'Means Web', system-ui, -apple-system, sans-serif;
+    font-weight: 500; /* Medium para títulos */
+  }
+  
+  /* Subtítulos usam Bevellier Regular */
+  .subtitle, .lead {
+    font-family: 'Bevellier', Georgia, serif;
+    font-weight: 400;
   }
 }
 
@@ -262,6 +319,26 @@
 }
 .font-playfair {
   font-family: 'Playfair Display', Georgia, serif;
+}
+
+/* Classes utilitárias para as fontes do brand */
+.font-means-web {
+  font-family: 'Means Web', system-ui, -apple-system, sans-serif;
+}
+
+.font-means-web-light {
+  font-family: 'Means Web', system-ui, -apple-system, sans-serif;
+  font-weight: 300;
+}
+
+.font-means-web-medium {
+  font-family: 'Means Web', system-ui, -apple-system, sans-serif;
+  font-weight: 500;
+}
+
+.font-bevellier {
+  font-family: 'Bevellier', Georgia, serif;
+  font-weight: 400;
 }
 
 /* Component styles */

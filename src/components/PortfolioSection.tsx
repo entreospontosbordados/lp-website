@@ -1,13 +1,37 @@
 export default function PortfolioSection() {
   return (
     <section className="min-h-screen flex items-center justify-center bg-gradient-to-br from-purple-50 to-violet-100">
-      <div className="text-center">
-        <h2 className="text-4xl md:text-6xl font-bold text-gray-800 mb-4">
-          Portfolio Section
+      <div className="text-center max-w-5xl mx-auto px-6">
+        <h2 className="text-4xl md:text-6xl font-means-web-medium text-gray-800 mb-6">
+          Nosso Portfólio
         </h2>
-        <p className="text-lg text-gray-600">
-          Esta é a seção de portfólio do site
+        <p className="subtitle text-xl md:text-2xl text-gray-700 mb-12">
+          Projetos que transformaram negócios e encantaram usuários
         </p>
+        <div className="grid md:grid-cols-2 gap-8">
+          <div className="bg-white/70 backdrop-blur-sm rounded-lg p-8 text-left">
+            <h3 className="font-means-web-medium text-2xl text-gray-800 mb-3">TechStart Platform</h3>
+            <p className="font-bevellier text-lg text-gray-700 mb-4">
+              Plataforma de gestão para startups de tecnologia
+            </p>
+            <p className="font-means-web-light text-gray-600 leading-relaxed">
+              Desenvolvemos uma plataforma completa que conecta investidores e startups, 
+              resultando em 300% de aumento nas conexões qualificadas e R$ 50M em 
+              investimentos facilitados no primeiro ano.
+            </p>
+          </div>
+          <div className="bg-white/70 backdrop-blur-sm rounded-lg p-8 text-left">
+            <h3 className="font-means-web-medium text-2xl text-gray-800 mb-3">EcoCommerce</h3>
+            <p className="font-bevellier text-lg text-gray-700 mb-4">
+              E-commerce sustentável para produtos ecológicos
+            </p>
+            <p className="font-means-web-light text-gray-600 leading-relaxed">
+              Criamos uma experiência de compra única focada em sustentabilidade, 
+              com sistema de rastreamento de impacto ambiental que aumentou as 
+              vendas em 250% e engajamento em 180%.
+            </p>
+          </div>
+        </div>
       </div>
     </section>
   );
