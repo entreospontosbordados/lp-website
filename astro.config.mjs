@@ -6,8 +6,9 @@ import tailwind from '@astrojs/tailwind';
 
 // https://astro.build/config
 export default defineConfig({
-  // TODO: Substituir pela URL real do domínio em produção
-  site: 'https://artembordados.com.br',
+  // GitHub Pages URL
+  site: 'https://entreospontosbordados.github.io',
+  base: '/lp-website',
   
   integrations: [
     react(),
