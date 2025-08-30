@@ -1,6 +1,4 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss';
 
 :root {
   --radius: 0.625rem;
@@ -243,15 +241,18 @@
 ============================= */
 @layer base {
   * {
-    @apply border-border outline-ring/50;
+    border-color: hsl(var(--border));
+    outline-color: hsl(var(--ring) / 0.5);
   }
   body {
-    @apply bg-background text-foreground font-inter;
+    background-color: hsl(var(--background));
+    color: hsl(var(--foreground));
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
     font-feature-settings: "rlig" 1, "calt" 1;
   }
   
   h1, h2, h3, h4, h5, h6 {
-    @apply font-playfair;
+    font-family: 'Playfair Display', Georgia, serif;
   }
 }
 
@@ -266,7 +267,9 @@
 /* Component styles */
 @layer components {
   .container {
-    @apply mx-auto max-w-7xl;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 80rem;
   }
 }
 
@@ -307,13 +310,15 @@ html { scroll-behavior: smooth; }
 
 /* Scrollbar */
 ::-webkit-scrollbar { width: 8px; }
-::-webkit-scrollbar-track { @apply bg-slate-100; }
-::-webkit-scrollbar-thumb { @apply bg-rose-300 rounded-full; }
-::-webkit-scrollbar-thumb:hover { @apply bg-rose-400; }
+::-webkit-scrollbar-track { background-color: #f1f5f9; }
+::-webkit-scrollbar-thumb { background-color: #fda4af; border-radius: 9999px; }
+::-webkit-scrollbar-thumb:hover { background-color: #fb7185; }
 
 /* Accessibility focus */
 .focus-visible:focus-visible {
-  @apply outline-2 outline-offset-2 outline-rose-500;
+  outline-width: 2px;
+  outline-offset: 2px;
+  outline-color: #f43f5e;
 }
 
 /* Print styles */

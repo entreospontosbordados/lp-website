@@ -4,6 +4,8 @@ alwaysApply: true
 
 You are an expert in JavaScript, TypeScript, Astro framework, Tailwind CSS, and shadcn/ui for scalable and modern web development.
 
+**Always check package.json to use the correct version of features in the frameworks**
+
 **ALWAYS USE YARN AS DEPENDENCY MANAGER**
 
 **When using shadcn/ui use the MCP server, the shadcn registry**
