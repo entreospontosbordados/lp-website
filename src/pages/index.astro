@@ -11,50 +11,42 @@ import TestimonialsSection from '../components/TestimonialsSection';
 import FinalCTA from '../components/FinalCTA';
 import Footer from '../components/Footer';
 
-const title = "Arte em Bordados | Bordados Livres Artesanais Únicos em Blumenau";
-const description = "Bordados livres artesanais únicos e exclusivos. Oficinas presenciais em Blumenau, produtos personalizados e riscos para bordar. Arte que transforma momentos especiais.";
-const keywords = "bordado livre, bordados artesanais, oficinas bordado, Blumenau, porta aliança bordado, porta maternidade, bordados personalizados, riscos para bordar, curso bordado, artesanato";
+const title = "Layout Reset | Seções Organizadas";
+const description = "Layout resetado com seções organizadas e componentes separados";
 ---
 
 <Layout 
   title={title}
   description={description}
-  keywords={keywords}
-  author="Arte em Bordados"
 >
-  <!-- Skip Navigation Link for Accessibility -->
-  <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-rose-600 text-white px-4 py-2 rounded-md z-50">
-    Pular para o conteúdo principal
-  </a>
-
-  <!-- Header with Navigation -->
+  <!-- Header -->
   <Header client:load />
 
   <!-- Main Content -->
-  <main id="main-content" class="overflow-hidden">
+  <main class="pt-20">
     
     <!-- Hero Section -->
     <HeroSection client:visible />
 
-    <!-- About the Artist -->
+    <!-- About Section -->
     <AboutSection client:visible />
 
-    <!-- Portfolio/Gallery -->
+    <!-- Portfolio Section -->
     <PortfolioSection client:visible />
 
-    <!-- Products and Digital Patterns -->
+    <!-- Products Section -->
     <ProductsSection client:visible />
 
-    <!-- Workshops in Blumenau -->
+    <!-- Workshops Section -->
     <WorkshopsSection client:visible />
 
-    <!-- Online Course Teaser -->
+    <!-- Course Teaser Section -->
     <CourseTeaser client:visible />
 
-    <!-- Testimonials -->
+    <!-- Testimonials Section -->
     <TestimonialsSection client:visible />
 
-    <!-- Final CTA -->
+    <!-- Final CTA Section -->
     <FinalCTA client:visible />
 
   </main>
