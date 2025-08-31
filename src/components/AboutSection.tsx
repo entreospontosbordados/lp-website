@@ -1,4 +1,4 @@
-import { SectionSplit } from './sections';
+import { SectionSplit } from '@/components/sections';
 
 export default function AboutSection() {
   return (

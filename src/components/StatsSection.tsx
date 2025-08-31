@@ -1,4 +1,4 @@
-import { SectionStats } from './sections';
+import { SectionStats } from '@/components/sections';
 import { Users, Award, Clock, TrendingUp } from 'lucide-react';
 
 export default function StatsSection() {

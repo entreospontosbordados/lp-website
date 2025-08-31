@@ -1,4 +1,4 @@
-import { SectionFAQ } from './sections';
+import { SectionFAQ } from '@/components/sections';
 
 export default function FAQSection() {
   const faqs = [

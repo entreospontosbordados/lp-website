@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Card, CardContent, CardHeader } from '../ui/card';
+import { Card, CardContent, CardHeader } from '@/components/ui/card';
 
 interface FAQItem {
   id: string;
@@ -245,7 +245,7 @@ export default function SectionFAQ({
                 {categories.map((category) => (
                   <button
                     key={category}
-                    onClick={() => setSelectedCategory(category)}
+                    onClick={() => setSelectedCategory(category || '')}
                     className={`px-4 py-2 rounded-full text-sm font-means-web-medium transition-colors ${
                       selectedCategory === category
                         ? 'bg-primary text-primary-foreground'

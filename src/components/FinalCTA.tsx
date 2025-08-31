@@ -1,4 +1,4 @@
-import { SectionCTA } from './sections';
+import { SectionCTA } from '@/components/sections';
 import { Shield } from 'lucide-react';
 
 export default function FinalCTA() {

@@ -1,4 +1,4 @@
-import { SectionCentered } from './sections';
+import { SectionCentered } from '@/components/sections';
 
 export default function HeroSection() {
   return (

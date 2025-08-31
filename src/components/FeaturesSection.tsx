@@ -1,4 +1,4 @@
-import { SectionGrid } from './sections';
+import { SectionGrid } from '@/components/sections';
 import { Palette, Code, Users, Zap, Shield, Award } from 'lucide-react';
 
 export default function FeaturesSection() {

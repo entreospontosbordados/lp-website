@@ -1,6 +1,6 @@
 import React from 'react';
-import { Card, CardContent } from '../ui/card';
-import { Avatar, AvatarFallback, AvatarImage } from '../ui/avatar';
+import { Card, CardContent } from '@/components/ui/card';
+import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 
 interface Testimonial {
   id: string;

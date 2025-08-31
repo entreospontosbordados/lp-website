@@ -1,4 +1,4 @@
-import { SectionTestimonials } from './sections';
+import { SectionTestimonials } from '@/components/sections';
 
 export default function TestimonialsSection() {
   const testimonials = [
