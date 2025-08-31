@@ -1,42 +1,65 @@
+import { SectionTestimonials } from './sections';
+
 export default function TestimonialsSection() {
+  const testimonials = [
+    {
+      id: "marina-silva",
+      content: "A parceria com a equipe foi transformadora. Eles não apenas entregaram um produto excepcional, mas nos ajudaram a repensar completamente nossa estratégia digital. Os resultados superaram todas as expectativas.",
+      author: {
+        name: "Marina Silva",
+        role: "CEO",
+        company: "TechInnovate",
+        avatar: "https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80"
+      },
+      rating: 5,
+      featured: true
+    },
+    {
+      id: "carlos-mendes",
+      content: "O workshop de Design Thinking revolucionou nossa forma de trabalhar. A equipe agora aborda problemas de forma mais criativa e colaborativa. Foi um investimento que se pagou em poucos meses.",
+      author: {
+        name: "Carlos Mendes",
+        role: "Diretor de Inovação",
+        company: "StartupHub",
+        avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+      },
+      rating: 5
+    },
+    {
+      id: "ana-costa",
+      content: "Profissionalismo exemplar e entrega no prazo. O novo site aumentou nossas conversões em 180% e melhorou significativamente nossa presença digital.",
+      author: {
+        name: "Ana Costa",
+        role: "Marketing Manager",
+        company: "EcoCommerce",
+        avatar: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+      },
+      rating: 5
+    },
+    {
+      id: "roberto-lima",
+      content: "A consultoria em UX foi fundamental para otimizar nossa plataforma. Reduzimos o tempo de onboarding em 60% e aumentamos a retenção de usuários.",
+      author: {
+        name: "Roberto Lima",
+        role: "Product Owner",
+        company: "FinTech Solutions",
+        avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80"
+      },
+      rating: 5
+    }
+  ];
+
   return (
-    <section className="min-h-screen flex items-center justify-center bg-muted">
-      <div className="text-center max-w-5xl mx-auto px-6">
-        <h2 className="text-4xl md:text-6xl font-means-web-medium text-foreground mb-6">
-          O Que Dizem Nossos Clientes
-        </h2>
-        <p className="subtitle text-xl md:text-2xl text-muted-foreground mb-12">
-          Histórias reais de transformação e sucesso
-        </p>
-        <div className="grid md:grid-cols-2 gap-8">
-          <div className="bg-card border rounded-lg p-8 text-left">
-            <p className="font-means-web-light text-lg text-muted-foreground leading-relaxed mb-6">
-              "A parceria com a equipe foi transformadora. Eles não apenas entregaram 
-              um produto excepcional, mas nos ajudaram a repensar completamente nossa 
-              estratégia digital. Os resultados superaram todas as expectativas."
-            </p>
-            <div className="flex items-center">
-              <div>
-                <h4 className="font-means-web-medium text-card-foreground">Marina Silva</h4>
-                <p className="font-bevellier text-primary">CEO, TechInnovate</p>
-              </div>
-            </div>
-          </div>
-          <div className="bg-card border rounded-lg p-8 text-left">
-            <p className="font-means-web-light text-lg text-muted-foreground leading-relaxed mb-6">
-              "O workshop de Design Thinking revolucionou nossa forma de trabalhar. 
-              A equipe agora aborda problemas de forma mais criativa e colaborativa. 
-              Foi um investimento que se pagou em poucos meses."
-            </p>
-            <div className="flex items-center">
-              <div>
-                <h4 className="font-means-web-medium text-card-foreground">Carlos Mendes</h4>
-                <p className="font-bevellier text-primary">Diretor de Inovação, StartupHub</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+    <SectionTestimonials
+      backgroundColor="muted"
+      layout="featured"
+      title="O Que Dizem Nossos Clientes"
+      subtitle="Histórias reais de transformação e sucesso"
+      description="Mais de 200 empresas já confiaram em nosso trabalho para transformar suas ideias em realidade digital."
+      testimonials={testimonials}
+      showRating={true}
+      containerSize="xl"
+      padding="xl"
+    />
   );
 }

@@ -2,17 +2,16 @@
 import Layout from '../layouts/Layout.astro';
 import Header from '../components/Header';
 import HeroSection from '../components/HeroSection';
+import FeaturesSection from '../components/FeaturesSection';
 import AboutSection from '../components/AboutSection';
-import PortfolioSection from '../components/PortfolioSection';
-import ProductsSection from '../components/ProductsSection';
-import WorkshopsSection from '../components/WorkshopsSection';
-import CourseTeaser from '../components/CourseTeaser';
+import StatsSection from '../components/StatsSection';
 import TestimonialsSection from '../components/TestimonialsSection';
+import FAQSection from '../components/FAQSection';
 import FinalCTA from '../components/FinalCTA';
 import Footer from '../components/Footer';
 
-const title = "Layout Reset | Seções Organizadas";
-const description = "Layout resetado com seções organizadas e componentes separados";
+const title = "Landing Page Modular | Componentes Reutilizáveis";
+const description = "Landing page construída com componentes modulares e reutilizáveis para máxima flexibilidade";
 ---
 
 <Layout 
@@ -28,23 +27,20 @@ const description = "Layout resetado com seções organizadas e componentes sepa
     <!-- Hero Section -->
     <HeroSection client:visible />
 
+    <!-- Features Section -->
+    <FeaturesSection client:visible />
+
     <!-- About Section -->
     <AboutSection client:visible />
 
-    <!-- Portfolio Section -->
-    <PortfolioSection client:visible />
-
-    <!-- Products Section -->
-    <ProductsSection client:visible />
-
-    <!-- Workshops Section -->
-    <WorkshopsSection client:visible />
-
-    <!-- Course Teaser Section -->
-    <CourseTeaser client:visible />
+    <!-- Stats Section -->
+    <StatsSection client:visible />
 
     <!-- Testimonials Section -->
     <TestimonialsSection client:visible />
+
+    <!-- FAQ Section -->
+    <FAQSection client:visible />
 
     <!-- Final CTA Section -->
     <FinalCTA client:visible />

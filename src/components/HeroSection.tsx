@@ -1,18 +1,27 @@
+import { SectionCentered } from './sections';
+
 export default function HeroSection() {
   return (
-    <section className="h-screen flex items-center justify-center bg-background">
-      <div className="text-center max-w-4xl mx-auto px-6">
-        <h1 className="text-5xl md:text-7xl font-means-web-medium text-foreground mb-6">
-          Transforme Sua Visão em Realidade
-        </h1>
-        <p className="subtitle text-xl md:text-2xl text-muted-foreground mb-8">
-          Criamos experiências digitais únicas que conectam marcas e pessoas
-        </p>
-        <p className="font-means-web-light text-lg text-muted-foreground leading-relaxed max-w-2xl mx-auto">
-          Nossa abordagem combina design estratégico, tecnologia de ponta e storytelling autêntico 
-          para criar soluções que não apenas impressionam, mas geram resultados reais para o seu negócio.
-        </p>
-      </div>
-    </section>
+    <SectionCentered
+      backgroundColor="background"
+      title="Transforme Sua Visão em Realidade"
+      subtitle="Criamos experiências digitais únicas que conectam marcas e pessoas"
+      description="Nossa abordagem combina design estratégico, tecnologia de ponta e storytelling autêntico para criar soluções que não apenas impressionam, mas geram resultados reais para o seu negócio."
+      image={{
+        src: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2015&q=80",
+        alt: "Workspace moderno com design e tecnologia",
+        position: "below"
+      }}
+      primaryCta={{
+        text: "Começar Projeto",
+        variant: "default"
+      }}
+      secondaryCta={{
+        text: "Ver Portfolio",
+        variant: "outline"
+      }}
+      containerSize="lg"
+      padding="xl"
+    />
   );
 }
