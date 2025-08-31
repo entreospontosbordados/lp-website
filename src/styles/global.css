@@ -52,63 +52,64 @@
 :root {
   --radius: 0.625rem;
 
-  --background: 0 0% 100%;
-  --foreground: 222.2 84% 4.9%;
+  /* Tema padrão baseado na paleta verde da marca */
+  --background: 0 0% 100%;          /* Branco puro */
+  --foreground: 120 8% 20%;         /* Verde escuro para texto */
 
-  --card: 0 0% 100%;
-  --card-foreground: 222.2 84% 4.9%;
+  --card: 0 0% 100%;                /* Branco para cards */
+  --card-foreground: 120 8% 20%;    /* Verde escuro */
 
-  --popover: 0 0% 100%;
-  --popover-foreground: 222.2 84% 4.9%;
+  --popover: 0 0% 100%;             /* Branco */
+  --popover-foreground: 120 8% 20%; /* Verde escuro */
 
-  --primary: 222.2 47.4% 11.2%;
-  --primary-foreground: 210 40% 98%;
+  --primary: 120 8% 33%;            /* Verde escuro da marca (#4F5B4F) */
+  --primary-foreground: 0 0% 100%;  /* Branco */
 
-  --secondary: 210 40% 96%;
-  --secondary-foreground: 222.2 47.4% 11.2%;
+  --secondary: 129 7% 48%;          /* Verde médio da marca (#748173) */
+  --secondary-foreground: 0 0% 100%; /* Branco */
 
-  --muted: 210 40% 96%;
-  --muted-foreground: 215.4 16.3% 46.9%;
+  --muted: 43 100% 87%;             /* Bege da marca (#FFE9C0) */
+  --muted-foreground: 120 8% 33%;   /* Verde escuro */
 
-  --accent: 210 40% 96%;
-  --accent-foreground: 222.2 47.4% 11.2%;
+  --accent: 13 45% 52%;             /* Laranja forte da marca (#BE5E48) */
+  --accent-foreground: 0 0% 100%;   /* Branco */
 
-  --destructive: 0 84.2% 60.2%;
-  --destructive-foreground: 210 40% 98%;
+  --destructive: 0 84% 60%;         /* Vermelho padrão */
+  --destructive-foreground: 0 0% 100%; /* Branco */
 
-  --border: 214.3 31.8% 91.4%;
-  --input: 214.3 31.8% 91.4%;
-  --ring: 222.2 84% 4.9%;
+  --border: 129 7% 85%;             /* Verde muito claro para bordas */
+  --input: 129 7% 85%;              /* Verde muito claro para inputs */
+  --ring: 120 8% 33%;               /* Verde escuro para focus ring */
 }
 
 .dark {
-  --background: 222.2 84% 4.9%;
-  --foreground: 210 40% 98%;
+  --background: 120 8% 8%;          /* Verde muito escuro */
+  --foreground: 43 100% 87%;        /* Bege claro */
 
-  --card: 222.2 84% 4.9%;
-  --card-foreground: 210 40% 98%;
+  --card: 120 8% 12%;               /* Verde escuro para cards */
+  --card-foreground: 43 100% 87%;   /* Bege claro */
 
-  --popover: 222.2 84% 4.9%;
-  --popover-foreground: 210 40% 98%;
+  --popover: 120 8% 12%;            /* Verde escuro */
+  --popover-foreground: 43 100% 87%; /* Bege claro */
 
-  --primary: 210 40% 98%;
-  --primary-foreground: 222.2 47.4% 11.2%;
+  --primary: 43 100% 87%;           /* Bege claro */
+  --primary-foreground: 120 8% 20%; /* Verde escuro */
 
-  --secondary: 217.2 32.6% 17.5%;
-  --secondary-foreground: 210 40% 98%;
+  --secondary: 129 7% 25%;          /* Verde médio escuro */
+  --secondary-foreground: 43 100% 87%; /* Bege claro */
 
-  --muted: 217.2 32.6% 17.5%;
-  --muted-foreground: 215 20.2% 65.1%;
+  --muted: 120 8% 15%;              /* Verde escuro */
+  --muted-foreground: 129 7% 65%;   /* Verde médio claro */
 
-  --accent: 217.2 32.6% 17.5%;
-  --accent-foreground: 210 40% 98%;
+  --accent: 18 86% 65%;             /* Laranja fraco (#F08159) */
+  --accent-foreground: 120 8% 8%;   /* Verde muito escuro */
 
-  --destructive: 0 62.8% 30.6%;
-  --destructive-foreground: 210 40% 98%;
+  --destructive: 0 62% 45%;         /* Vermelho escuro */
+  --destructive-foreground: 43 100% 87%; /* Bege claro */
 
-  --border: 217.2 32.6% 17.5%;
-  --input: 217.2 32.6% 17.5%;
-  --ring: 212.7 26.8% 83.9%;
+  --border: 120 8% 20%;             /* Verde escuro para bordas */
+  --input: 120 8% 20%;              /* Verde escuro para inputs */
+  --ring: 43 100% 87%;              /* Bege claro para focus ring */
 }
 
 /* =============================
