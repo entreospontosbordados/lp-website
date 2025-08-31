@@ -49,9 +49,106 @@
   font-display: swap;
 }
 
-:root {
+/* =============================
+   TAILWIND V4 THEME CONFIG
+============================= */
+@theme {
+  /* Fontes personalizadas */
+  --font-family-means-web: 'Means Web', system-ui, -apple-system, sans-serif;
+  --font-family-bevellier: 'Bevellier', Georgia, serif;
+  --font-family-inter: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-family-playfair: 'Playfair Display', Georgia, serif;
+
+  /* Cores da marca - Paleta Verde (Principal) */
+  --color-brand-green-50: #f6f7f6;
+  --color-brand-green-100: #e8eae8;
+  --color-brand-green-200: #d1d5d1;
+  --color-brand-green-300: #babbb1;
+  --color-brand-green-400: #9ca09c;
+  --color-brand-green-500: #748173;
+  --color-brand-green-600: #4f5b4f;
+  --color-brand-green-700: #3d453d;
+  --color-brand-green-800: #2d332d;
+  --color-brand-green-900: #1f241f;
+  --color-brand-green-950: #0f120f;
+
+  /* Cores da marca - Paleta Laranja */
+  --color-brand-orange-50: #fef7f3;
+  --color-brand-orange-100: #fdeee6;
+  --color-brand-orange-200: #fbd5c7;
+  --color-brand-orange-300: #f8b8a3;
+  --color-brand-orange-400: #f08159;
+  --color-brand-orange-500: #be5e48;
+  --color-brand-orange-600: #a54d3a;
+  --color-brand-orange-700: #8a3f2f;
+  --color-brand-orange-800: #6f3326;
+  --color-brand-orange-900: #58281e;
+  --color-brand-orange-950: #2f1510;
+
+  /* Cores da marca - Paleta Bege */
+  --color-brand-beige-50: #fffef9;
+  --color-brand-beige-100: #fffcf0;
+  --color-brand-beige-200: #fff6d9;
+  --color-brand-beige-300: #ffe9c0;
+  --color-brand-beige-400: #ffd89a;
+  --color-brand-beige-500: #ffcc7a;
+  --color-brand-beige-600: #e6b366;
+  --color-brand-beige-700: #cc9952;
+  --color-brand-beige-800: #b3803d;
+  --color-brand-beige-900: #996629;
+  --color-brand-beige-950: #4d3314;
+
+  /* Cores neutras complementares */
+  --color-neutral-50: #fafafa;
+  --color-neutral-100: #f5f5f5;
+  --color-neutral-200: #e5e5e5;
+  --color-neutral-300: #d4d4d4;
+  --color-neutral-400: #a3a3a3;
+  --color-neutral-500: #737373;
+  --color-neutral-600: #525252;
+  --color-neutral-700: #404040;
+  --color-neutral-800: #262626;
+  --color-neutral-900: #171717;
+  --color-neutral-950: #0a0a0a;
+
+  /* Cores de estado */
+  --color-success-50: #f0f9f4;
+  --color-success-100: #dcf4e3;
+  --color-success-500: #22c55e;
+  --color-success-600: #16a34a;
+  --color-success-700: #15803d;
+
+  --color-warning-50: #fffbeb;
+  --color-warning-100: #fef3c7;
+  --color-warning-500: #f59e0b;
+  --color-warning-600: #d97706;
+  --color-warning-700: #b45309;
+
+  --color-error-50: #fef2f2;
+  --color-error-100: #fee2e2;
+  --color-error-500: #ef4444;
+  --color-error-600: #dc2626;
+  --color-error-700: #b91c1c;
+
+  --color-info-50: #eff6ff;
+  --color-info-100: #dbeafe;
+  --color-info-500: #3b82f6;
+  --color-info-600: #2563eb;
+  --color-info-700: #1d4ed8;
+
+  /* Border radius */
   --radius: 0.625rem;
 
+  /* Animações */
+  --animate-fade-in: fadeIn 0.6s ease-in-out;
+  --animate-slide-up: slideUp 0.6s ease-out;
+  --animate-scale-in: scaleIn 0.4s ease-out;
+}
+
+/* =============================
+   CSS CUSTOM PROPERTIES PARA SHADCN/UI
+============================= */
+:root {
   /* Tema padrão baseado na paleta verde da marca */
   --background: 0 0% 100%;          /* Branco puro */
   --foreground: 120 8% 20%;         /* Verde escuro para texto */
@@ -297,52 +394,26 @@
   body {
     background-color: hsl(var(--background));
     color: hsl(var(--foreground));
-    font-family: 'Means Web', system-ui, -apple-system, sans-serif;
+    font-family: var(--font-family-means-web);
     font-weight: 300; /* Light para corpo de texto */
     font-feature-settings: "rlig" 1, "calt" 1;
   }
   
   h1, h2, h3, h4, h5, h6 {
-    font-family: 'Means Web', system-ui, -apple-system, sans-serif;
+    font-family: var(--font-family-means-web);
     font-weight: 500; /* Medium para títulos */
   }
   
   /* Subtítulos usam Bevellier Regular */
   .subtitle, .lead {
-    font-family: 'Bevellier', Georgia, serif;
+    font-family: var(--font-family-bevellier);
     font-weight: 400;
   }
 }
 
-/* Fonts */
-.font-inter {
-  font-family: 'Inter', system-ui, -apple-system, sans-serif;
-}
-.font-playfair {
-  font-family: 'Playfair Display', Georgia, serif;
-}
-
-/* Classes utilitárias para as fontes do brand */
-.font-means-web {
-  font-family: 'Means Web', system-ui, -apple-system, sans-serif;
-}
-
-.font-means-web-light {
-  font-family: 'Means Web', system-ui, -apple-system, sans-serif;
-  font-weight: 300;
-}
-
-.font-means-web-medium {
-  font-family: 'Means Web', system-ui, -apple-system, sans-serif;
-  font-weight: 500;
-}
-
-.font-bevellier {
-  font-family: 'Bevellier', Georgia, serif;
-  font-weight: 400;
-}
-
-/* Component styles */
+/* =============================
+   COMPONENT STYLES
+============================= */
 @layer components {
   .container {
     margin-left: auto;
@@ -351,7 +422,9 @@
   }
 }
 
-/* Utilities */
+/* =============================
+   UTILITY STYLES
+============================= */
 @layer utilities {
   .text-balance {
     text-wrap: balance;
@@ -359,17 +432,19 @@
   
   /* Animation utilities */
   .animate-fade-in {
-    animation: fadeIn 0.6s ease-in-out;
+    animation: var(--animate-fade-in);
   }
   .animate-slide-up {
-    animation: slideUp 0.6s ease-out;
+    animation: var(--animate-slide-up);
   }
   .animate-scale-in {
-    animation: scaleIn 0.4s ease-out;
+    animation: var(--animate-scale-in);
   }
 }
 
-/* Animations */
+/* =============================
+   KEYFRAMES
+============================= */
 @keyframes fadeIn {
   from { opacity: 0; }
   to { opacity: 1; }
