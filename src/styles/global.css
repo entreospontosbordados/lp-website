@@ -56,88 +56,9 @@
   /* Fontes personalizadas */
   --font-family-means-web: 'Means Web', system-ui, -apple-system, sans-serif;
   --font-family-bevellier: 'Bevellier', Georgia, serif;
-  --font-family-inter: 'Inter', system-ui, -apple-system, sans-serif;
-  --font-family-playfair: 'Playfair Display', Georgia, serif;
-
-  /* Cores da marca - Paleta Verde (Principal) */
-  --color-brand-green-50: #f6f7f6;
-  --color-brand-green-100: #e8eae8;
-  --color-brand-green-200: #d1d5d1;
-  --color-brand-green-300: #babbb1;
-  --color-brand-green-400: #9ca09c;
-  --color-brand-green-500: #748173;
-  --color-brand-green-600: #4f5b4f;
-  --color-brand-green-700: #3d453d;
-  --color-brand-green-800: #2d332d;
-  --color-brand-green-900: #1f241f;
-  --color-brand-green-950: #0f120f;
-
-  /* Cores da marca - Paleta Laranja */
-  --color-brand-orange-50: #fef7f3;
-  --color-brand-orange-100: #fdeee6;
-  --color-brand-orange-200: #fbd5c7;
-  --color-brand-orange-300: #f8b8a3;
-  --color-brand-orange-400: #f08159;
-  --color-brand-orange-500: #be5e48;
-  --color-brand-orange-600: #a54d3a;
-  --color-brand-orange-700: #8a3f2f;
-  --color-brand-orange-800: #6f3326;
-  --color-brand-orange-900: #58281e;
-  --color-brand-orange-950: #2f1510;
-
-  /* Cores da marca - Paleta Bege */
-  --color-brand-beige-50: #fffef9;
-  --color-brand-beige-100: #fffcf0;
-  --color-brand-beige-200: #fff6d9;
-  --color-brand-beige-300: #ffe9c0;
-  --color-brand-beige-400: #ffd89a;
-  --color-brand-beige-500: #ffcc7a;
-  --color-brand-beige-600: #e6b366;
-  --color-brand-beige-700: #cc9952;
-  --color-brand-beige-800: #b3803d;
-  --color-brand-beige-900: #996629;
-  --color-brand-beige-950: #4d3314;
-
-  /* Cores neutras complementares */
-  --color-neutral-50: #fafafa;
-  --color-neutral-100: #f5f5f5;
-  --color-neutral-200: #e5e5e5;
-  --color-neutral-300: #d4d4d4;
-  --color-neutral-400: #a3a3a3;
-  --color-neutral-500: #737373;
-  --color-neutral-600: #525252;
-  --color-neutral-700: #404040;
-  --color-neutral-800: #262626;
-  --color-neutral-900: #171717;
-  --color-neutral-950: #0a0a0a;
-
-  /* Cores de estado */
-  --color-success-50: #f0f9f4;
-  --color-success-100: #dcf4e3;
-  --color-success-500: #22c55e;
-  --color-success-600: #16a34a;
-  --color-success-700: #15803d;
-
-  --color-warning-50: #fffbeb;
-  --color-warning-100: #fef3c7;
-  --color-warning-500: #f59e0b;
-  --color-warning-600: #d97706;
-  --color-warning-700: #b45309;
-
-  --color-error-50: #fef2f2;
-  --color-error-100: #fee2e2;
-  --color-error-500: #ef4444;
-  --color-error-600: #dc2626;
-  --color-error-700: #b91c1c;
-
-  --color-info-50: #eff6ff;
-  --color-info-100: #dbeafe;
-  --color-info-500: #3b82f6;
-  --color-info-600: #2563eb;
-  --color-info-700: #1d4ed8;
 
   /* Border radius */
-  --radius: 0.625rem;
+  --radius: 0.5rem;
 
   /* Animações */
   --animate-fade-in: fadeIn 0.6s ease-in-out;
@@ -149,239 +70,51 @@
    CSS CUSTOM PROPERTIES PARA SHADCN/UI
 ============================= */
 :root {
-  /* Tema padrão baseado na paleta verde da marca */
-  --background: 0 0% 100%;          /* Branco puro */
-  --foreground: 120 8% 20%;         /* Verde escuro para texto */
-
-  --card: 0 0% 100%;                /* Branco para cards */
-  --card-foreground: 120 8% 20%;    /* Verde escuro */
-
-  --popover: 0 0% 100%;             /* Branco */
-  --popover-foreground: 120 8% 20%; /* Verde escuro */
-
-  --primary: 120 8% 33%;            /* Verde escuro da marca (#4F5B4F) */
-  --primary-foreground: 0 0% 100%;  /* Branco */
-
-  --secondary: 129 7% 48%;          /* Verde médio da marca (#748173) */
-  --secondary-foreground: 0 0% 100%; /* Branco */
-
-  --muted: 43 100% 87%;             /* Bege da marca (#FFE9C0) */
-  --muted-foreground: 120 8% 33%;   /* Verde escuro */
-
-  --accent: 13 45% 52%;             /* Laranja forte da marca (#BE5E48) */
-  --accent-foreground: 0 0% 100%;   /* Branco */
-
-  --destructive: 0 84% 60%;         /* Vermelho padrão */
-  --destructive-foreground: 0 0% 100%; /* Branco */
-
-  --border: 129 7% 85%;             /* Verde muito claro para bordas */
-  --input: 129 7% 85%;              /* Verde muito claro para inputs */
-  --ring: 120 8% 33%;               /* Verde escuro para focus ring */
+  --background: 0 0% 100%;
+  --foreground: 222.2 84% 4.9%;
+  --card: 0 0% 100%;
+  --card-foreground: 222.2 84% 4.9%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 222.2 84% 4.9%;
+  --primary: 222.2 47.4% 11.2%;
+  --primary-foreground: 210 40% 98%;
+  --secondary: 210 40% 96%;
+  --secondary-foreground: 222.2 47.4% 11.2%;
+  --muted: 210 40% 96%;
+  --muted-foreground: 215.4 16.3% 46.9%;
+  --accent: 210 40% 96%;
+  --accent-foreground: 222.2 47.4% 11.2%;
+  --destructive: 0 84.2% 60.2%;
+  --destructive-foreground: 210 40% 98%;
+  --border: 214.3 31.8% 91.4%;
+  --input: 214.3 31.8% 91.4%;
+  --ring: 222.2 47.4% 11.2%;
+  --radius: 0.5rem;
 }
 
 .dark {
-  --background: 120 8% 8%;          /* Verde muito escuro */
-  --foreground: 43 100% 87%;        /* Bege claro */
-
-  --card: 120 8% 12%;               /* Verde escuro para cards */
-  --card-foreground: 43 100% 87%;   /* Bege claro */
-
-  --popover: 120 8% 12%;            /* Verde escuro */
-  --popover-foreground: 43 100% 87%; /* Bege claro */
-
-  --primary: 43 100% 87%;           /* Bege claro */
-  --primary-foreground: 120 8% 20%; /* Verde escuro */
-
-  --secondary: 129 7% 25%;          /* Verde médio escuro */
-  --secondary-foreground: 43 100% 87%; /* Bege claro */
-
-  --muted: 120 8% 15%;              /* Verde escuro */
-  --muted-foreground: 129 7% 65%;   /* Verde médio claro */
-
-  --accent: 18 86% 65%;             /* Laranja fraco (#F08159) */
-  --accent-foreground: 120 8% 8%;   /* Verde muito escuro */
-
-  --destructive: 0 62% 45%;         /* Vermelho escuro */
-  --destructive-foreground: 43 100% 87%; /* Bege claro */
-
-  --border: 120 8% 20%;             /* Verde escuro para bordas */
-  --input: 120 8% 20%;              /* Verde escuro para inputs */
-  --ring: 43 100% 87%;              /* Bege claro para focus ring */
+  --background: 222.2 84% 4.9%;
+  --foreground: 210 40% 98%;
+  --card: 222.2 84% 4.9%;
+  --card-foreground: 210 40% 98%;
+  --popover: 222.2 84% 4.9%;
+  --popover-foreground: 210 40% 98%;
+  --primary: 210 40% 98%;
+  --primary-foreground: 222.2 47.4% 11.2%;
+  --secondary: 217.2 32.6% 17.5%;
+  --secondary-foreground: 210 40% 98%;
+  --muted: 217.2 32.6% 17.5%;
+  --muted-foreground: 215 20.2% 65.1%;
+  --accent: 217.2 32.6% 17.5%;
+  --accent-foreground: 210 40% 98%;
+  --destructive: 0 62.8% 30.6%;
+  --destructive-foreground: 210 40% 98%;
+  --border: 217.2 32.6% 17.5%;
+  --input: 217.2 32.6% 17.5%;
+  --ring: 212.7 26.8% 83.9%;
 }
 
-/* =============================
-   THEMES CUSTOM
-============================= */
 
-/* 🌿 Natureza Sofisticada */
-:root[data-theme="natureza"] {
-  --background: 43 100% 87%;       /* #FFE9C0 */
-  --foreground: 0 0% 11%;          /* #1C1C1C */
-
-  --primary: 120 8% 33%;           /* #4F5B4F */
-  --primary-foreground: 43 100% 87%;
-
-  --secondary: 13 45% 52%;         /* #BE5E48 */
-  --secondary-foreground: 43 100% 87%;
-
-  --accent: 18 86% 65%;            /* #F08159 */
-  --accent-foreground: 0 0% 100%;
-
-  --muted: 129 7% 48%;             /* #748173 */
-  --muted-foreground: 0 0% 93%;
-
-  --card: 43 100% 87%;
-  --card-foreground: 0 0% 11%;
-
-  --popover: 43 100% 87%;
-  --popover-foreground: 0 0% 11%;
-
-  --border: 129 7% 48%;
-  --input: 129 7% 48%;
-  --ring: 18 86% 65%;
-  --destructive: 0 84% 60%;
-  --destructive-foreground: 0 0% 100%;
-}
-.dark[data-theme="natureza"] {
-  --background: 0 0% 11%;
-  --foreground: 43 100% 87%;
-}
-
-/* 🌅 Pôr do Sol */
-:root[data-theme="por-do-sol"] {
-  --background: 48 100% 99%;       /* #FFFDF9 */
-  --foreground: 0 0% 17%;          /* #2D2D2D */
-
-  --primary: 13 45% 52%;           /* #BE5E48 */
-  --primary-foreground: 0 0% 100%;
-
-  --secondary: 120 8% 33%;         /* #4F5B4F */
-  --secondary-foreground: 0 0% 100%;
-
-  --accent: 152 30% 73%;           /* #a8ccb3 */
-  --accent-foreground: 0 0% 11%;
-
-  --muted: 43 100% 87%;            /* #FFE9C0 */
-  --muted-foreground: 120 8% 33%;
-
-  --card: 48 100% 99%;
-  --card-foreground: 0 0% 17%;
-
-  --popover: 48 100% 99%;
-  --popover-foreground: 0 0% 17%;
-
-  --border: 120 8% 33%;
-  --input: 120 8% 33%;
-  --ring: 152 30% 73%;
-  --destructive: 0 84% 60%;
-  --destructive-foreground: 0 0% 100%;
-}
-.dark[data-theme="por-do-sol"] {
-  --background: 0 0% 17%;
-  --foreground: 48 100% 99%;
-}
-
-/* 🌱 Orgânico */
-:root[data-theme="organico"] {
-  --background: 43 100% 87%;
-  --foreground: 0 0% 17%;
-
-  --primary: 129 7% 48%;           /* #748173 */
-  --primary-foreground: 0 0% 100%;
-
-  --secondary: 152 30% 73%;        /* #a8ccb3 */
-  --secondary-foreground: 0 0% 11%;
-
-  --accent: 13 45% 52%;            /* #BE5E48 */
-  --accent-foreground: 0 0% 100%;
-
-  --muted: 30 20% 90%;             /* #EDE7DD */
-  --muted-foreground: 120 8% 33%;
-
-  --card: 43 100% 87%;
-  --card-foreground: 0 0% 17%;
-
-  --popover: 43 100% 87%;
-  --popover-foreground: 0 0% 17%;
-
-  --border: 129 7% 48%;
-  --input: 129 7% 48%;
-  --ring: 13 45% 52%;
-  --destructive: 0 84% 60%;
-  --destructive-foreground: 0 0% 100%;
-}
-.dark[data-theme="organico"] {
-  --background: 0 0% 17%;
-  --foreground: 43 100% 87%;
-}
-
-/* ☀️ Bege Solar */
-:root[data-theme="bege-solar"] {
-  --background: 48 100% 98%;       /* #FFFDF5 */
-  --foreground: 0 0% 23%;          /* #3B3B3B */
-
-  --primary: 43 100% 87%;          /* #FFE9C0 */
-  --primary-foreground: 120 8% 33%;
-
-  --secondary: 120 8% 33%;         /* #4F5B4F */
-  --secondary-foreground: 0 0% 100%;
-
-  --accent: 18 86% 65%;            /* #F08159 */
-  --accent-foreground: 0 0% 100%;
-
-  --muted: 152 30% 73%;            /* #a8ccb3 */
-  --muted-foreground: 0 0% 17%;
-
-  --card: 48 100% 98%;
-  --card-foreground: 0 0% 23%;
-
-  --popover: 48 100% 98%;
-  --popover-foreground: 0 0% 23%;
-
-  --border: 152 30% 73%;
-  --input: 152 30% 73%;
-  --ring: 18 86% 65%;
-  --destructive: 0 84% 60%;
-  --destructive-foreground: 0 0% 100%;
-}
-.dark[data-theme="bege-solar"] {
-  --background: 0 0% 23%;
-  --foreground: 43 100% 87%;
-}
-
-/* 🔥 Contraste Elegante */
-:root[data-theme="contraste"] {
-  --background: 48 60% 98%;        /* #FDFCF9 */
-  --foreground: 0 0% 12%;          /* #1F1F1F */
-
-  --primary: 18 86% 65%;           /* #F08159 */
-  --primary-foreground: 0 0% 100%;
-
-  --secondary: 129 7% 48%;         /* #748173 */
-  --secondary-foreground: 0 0% 100%;
-
-  --accent: 13 45% 52%;            /* #BE5E48 */
-  --accent-foreground: 0 0% 100%;
-
-  --muted: 30 20% 90%;             /* #EDE7DD */
-  --muted-foreground: 120 8% 33%;
-
-  --card: 48 60% 98%;
-  --card-foreground: 0 0% 12%;
-
-  --popover: 48 60% 98%;
-  --popover-foreground: 0 0% 12%;
-
-  --border: 30 20% 90%;
-  --input: 30 20% 90%;
-  --ring: 18 86% 65%;
-  --destructive: 0 84% 60%;
-  --destructive-foreground: 0 0% 100%;
-}
-.dark[data-theme="contraste"] {
-  --background: 0 0% 12%;
-  --foreground: 48 60% 98%;
-}
 
 /* =============================
    BASE STYLES
@@ -389,7 +122,6 @@
 @layer base {
   * {
     border-color: hsl(var(--border));
-    outline-color: hsl(var(--ring) / 0.5);
   }
   body {
     background-color: hsl(var(--background));
@@ -463,15 +195,18 @@ html { scroll-behavior: smooth; }
 
 /* Scrollbar */
 ::-webkit-scrollbar { width: 8px; }
-::-webkit-scrollbar-track { background-color: #f1f5f9; }
-::-webkit-scrollbar-thumb { background-color: #fda4af; border-radius: 9999px; }
-::-webkit-scrollbar-thumb:hover { background-color: #fb7185; }
+::-webkit-scrollbar-track { background-color: hsl(var(--muted)); }
+::-webkit-scrollbar-thumb { 
+  background-color: hsl(var(--border)); 
+  border-radius: 9999px; 
+}
+::-webkit-scrollbar-thumb:hover { background-color: hsl(var(--accent)); }
 
 /* Accessibility focus */
 .focus-visible:focus-visible {
   outline-width: 2px;
   outline-offset: 2px;
-  outline-color: #f43f5e;
+  outline-color: hsl(var(--ring));
 }
 
 /* Print styles */
