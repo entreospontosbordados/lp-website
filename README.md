@@ -1,176 +1,104 @@
-# Arte em Bordados - Landing Page
+# Landing Page Modular (Astro + React + Tailwind)
 
-Uma landing page moderna e otimizada para conversão, criada para apresentar os produtos e serviços de bordado livre artesanal.
+Landing page modular e escalável com seções reutilizáveis, UI kit baseado em shadcn/ui e Tailwind CSS v4. Focada em performance, acessibilidade e fácil customização.
 
-## 🎯 Características
+## 🔗 Preview/Deploy
 
-- **Design Responsivo**: Adaptado para todos os dispositivos
-- **Otimizado para SEO**: Meta tags completas e estrutura semântica
-- **Alta Conversão**: Design focado em CTAs e experiência do usuário
-- **Acessibilidade**: Seguindo as melhores práticas de acessibilidade
-- **Performance**: Carregamento rápido e otimizado
+- GitHub Pages (path-based): `https://entreospontosbordados.github.io/lp-website/`
+- Configuração de base definida em `astro.config.mjs` (`site` e `base`).
 
 ## 🛠️ Tecnologias
 
-- **Astro** - Framework principal
-- **React** - Componentes interativos
-- **TypeScript** - Tipagem estática
-- **Tailwind CSS** - Estilização utilitária
-- **shadcn/ui** - Biblioteca de componentes
-- **Lucide React** - Ícones
+- Astro 5 (com `@astrojs/react`)
+- React 19 + TypeScript
+- Tailwind CSS v4 (`@tailwindcss/vite`)
+- shadcn/ui (tokens e componentes React)
+- Radix UI (Avatar/Slot), Lucide React (ícones)
+- Embla Carousel, Sonner (toasts)
 
-## 📋 Seções da Landing Page
-
-1. **Header + Hero** - Apresentação principal com CTA
-2. **Sobre a Artesã** - História pessoal e credibilidade
-3. **Portfólio** - Galeria de trabalhos organizados por categoria
-4. **Produtos** - Loja com produtos prontos e riscos digitais
-5. **Oficinas** - Cursos presenciais em Blumenau
-6. **Curso Online** - Teaser para captação de leads
-7. **Depoimentos** - Prova social e credibilidade
-8. **CTA Final** - Última oportunidade de conversão
-9. **Footer** - Informações de contato e links
-
-## 🚀 Como executar
+## 🚀 Scripts
 
 ```bash
 # Instalar dependências
 yarn install
 
-# Executar em desenvolvimento
+# Desenvolvimento
 yarn dev
 
-# Construir para produção
+# Build de produção
 yarn build
 
-# Visualizar build de produção
+# Preview do build
 yarn preview
 ```
 
-## 📸 Imagens Necessárias
+## 📁 Estrutura
 
-### **Estrutura de pastas sugerida:**
 ```
-public/
-├── og-image.jpg                    # Imagem para redes sociais (1200x630px)
-├── apple-touch-icon.png           # Ícone para dispositivos Apple (180x180px)
-├── portfolio/
-│   ├── porta-alianca-1.jpg        # Porta aliança rosa delicada (600x400px)
-│   ├── porta-alianca-2.jpg        # Porta aliança clássico (600x400px)
-│   ├── porta-maternidade-1.jpg    # Porta maternidade jardim encantado (600x400px)
-│   ├── porta-maternidade-2.jpg    # Porta maternidade lua e estrelas (600x400px)
-│   ├── decorativo-1.jpg           # Mandala floral decorativa (600x400px)
-│   └── decorativo-2.jpg           # Quadro decorativo flores (600x400px)
-├── products/
-│   ├── porta-alianca-produto.jpg  # Produto porta aliança (400x300px)
-│   ├── riscos-maternidade.jpg     # Preview riscos maternidade (400x300px)
-│   ├── quadro-flores.jpg          # Quadro bordado com flores (400x300px)
-│   ├── riscos-mandala.jpg         # Preview riscos mandala (400x300px)
-│   ├── porta-maternidade-produto.jpg # Produto porta maternidade (400x300px)
-│   └── kit-iniciante.jpg          # Preview kit riscos iniciante (400x300px)
-└── testimonials/
-    ├── maria-fernanda.jpg          # Foto cliente (100x100px) - opcional
-    ├── ana-clara.jpg              # Foto cliente (100x100px) - opcional
-    ├── juliana-costa.jpg          # Foto cliente (100x100px) - opcional
-    ├── rosana-lima.jpg            # Foto cliente (100x100px) - opcional
-    ├── camila-rodrigues.jpg       # Foto cliente (100x100px) - opcional
-    └── patricia-muller.jpg        # Foto cliente (100x100px) - opcional
+src/
+├── components/
+│   ├── Header.tsx, Footer.tsx
+│   ├── HeroSection.tsx, FeaturesSection.tsx, AboutSection.tsx
+│   ├── StatsSection.tsx, TestimonialsSection.tsx, FAQSection.tsx, FinalCTA.tsx
+│   ├── sections/            # Componentes de seção reutilizáveis
+│   └── ui/                  # UI kit (button, card, input, etc.)
+├── layouts/
+│   └── Layout.astro         # Head, fontes, favicon e <slot />
+├── pages/
+│   ├── index.astro          # Página principal (monta as seções)
+│   ├── uikit.astro          # Showcase dos componentes de UI
+│   └── markdown-page.md     # Exemplo de conteúdo Markdown
+├── styles/
+│   └── global.css           # Tailwind v4 + tema + tokens shadcn
+└── lib/utils.ts
 ```
 
-### **Imagens Principais Necessárias:**
+## 🧩 Seções e UI
 
-1. **Hero Section**: Imagem da artesã trabalhando ou composição artística dos produtos (800x600px)
-2. **Sobre a Artesã**: Foto profissional da artesã em seu ateliê (500x600px)
-3. **Ateliê**: Foto do espaço das oficinas, ambiente acolhedor (600x400px)
-4. **Curso Online**: Mockup da plataforma ou capturas das videoaulas (400x250px)
+- Seções disponíveis em `src/components/sections` (documentadas em `src/components/sections/README.md`).
+- UI kit em `src/components/ui` com exports centralizados em `index.ts`.
+- Página `src/pages/uikit.astro` exibe `UIKitShowcase.tsx` com exemplos.
 
-## 🎨 Paleta de Cores
+## 🎨 Estilo e Tema
 
-- **Rosa Principal**: `#E11D48` (rose-600)
-- **Rosa Claro**: `#FDF2F8` (rose-50)
-- **Cinza Escuro**: `#1E293B` (slate-800)
-- **Cinza Médio**: `#64748B` (slate-500)
-- **Branco**: `#FFFFFF`
+- Tailwind v4 configurado em `src/styles/global.css` (import `tailwindcss`).
+- Tokens e variáveis compatíveis com shadcn/ui definidos em `:root` e `.dark`.
+- Fontes personalizadas carregadas de `public/fonts` e referenciadas no CSS.
 
-## 📱 Contatos para Configurar
+## ⚙️ SEO e Metadados
 
-### **WhatsApp (Atual: número fake)**
-- Linha 6: `const whatsappUrl = "https://wa.me/5547999999999...`
-- Substituir `5547999999999` pelo número real
+- `src/layouts/Layout.astro` define `<title>` e meta tags básicas via props (`title`, `description`, etc.).
+- Defina os textos da página em `src/pages/index.astro` (constantes `title` e `description`).
 
-### **Redes Sociais**
-- Instagram: `src/components/Footer.tsx` - linha 10
-- Facebook: `src/components/Footer.tsx` - linha 11
+## 🔧 Customização Rápida
 
-### **E-mail**
-- E-mail de contato: `src/components/Footer.tsx` - linha 95
+- CTAs e textos principais: `src/components/HeroSection.tsx` e `src/components/FinalCTA.tsx`.
+- Header/Footer: `src/components/Header.tsx` e `src/components/Footer.tsx`.
+- Ícones: `lucide-react` já instalado (ex.: `Shield`).
+- Imagens: substitua os `image.src` nas seções ou use arquivos em `public/images`.
 
-## 🔧 Customizações Recomendadas
+## 📦 shadcn/ui
 
-1. **Integração com Email Marketing** (CourseTeaser.tsx):
-   - Mailchimp, ConvertKit ou similar para o teaser do curso
-
-2. **Analytics**:
-   - Google Analytics
-   - Google Tag Manager
-   - Pixel do Facebook
-
-3. **Chat/WhatsApp Widget**:
-   - Widget flutuante do WhatsApp
-
-## 📈 SEO Otimizações
-
-- ✅ Meta tags completas
-- ✅ Schema.org JSON-LD
-- ✅ Sitemap automático (Astro)
-- ✅ URLs amigáveis
-- ✅ Performance otimizada
-- ✅ Estrutura semântica
-
-## 🎯 Conversão - Elementos Implementados
-
-- **Múltiplos CTAs** estrategicamente posicionados
-- **Prova social** (depoimentos, números, avaliações)
-- **Senso de urgência** (turmas limitadas)
-- **Benefícios claros** em cada seção
-- **Formulário de lead** (curso online)
-- **WhatsApp como canal principal** de contato
-
-## 📞 Suporte
-
-Para dúvidas sobre implementação ou customizações, consulte a documentação oficial:
-- [Astro Docs](https://docs.astro.build/)
-- [Tailwind CSS](https://tailwindcss.com/)
-- [shadcn/ui](https://ui.shadcn.com/)
-
----
-
-```mermaid
-graph TD
-    A["🏠 Header<br/>Logo + Navigation + WhatsApp CTA"] --> B["🎯 Hero Section<br/>Título Principal + Value Prop + CTAs"]
-    B --> C["👩‍🎨 About Section<br/>História da Artesã + Features"]
-    C --> D["🖼️ Portfolio Section<br/>Galeria com Filtros por Categoria"]
-    D --> E["🛒 Products Section<br/>Produtos Prontos + Riscos Digitais"]
-    E --> F["🎓 Workshops Section<br/>Oficinas Presenciais + Depoimentos"]
-    F --> G["📚 Course Teaser<br/>Captura de Leads para Curso Online"]
-    G --> H["⭐ Testimonials Section<br/>Depoimentos + Stats de Credibilidade"]
-    H --> I["🚀 Final CTA<br/>Última Oportunidade de Conversão"]
-    I --> J["📞 Footer<br/>Contatos + Links + Redes Sociais"]
-
-    style A fill:#fdf2f8,stroke:#e11d48,stroke-width:2px
-    style B fill:#fdf2f8,stroke:#e11d48,stroke-width:3px
-    style I fill:#fdf2f8,stroke:#e11d48,stroke-width:3px
-    style J fill:#1e293b,stroke:#64748b,color:#ffffff
-    
-    K["🎨 Design System"] --> L["Tailwind CSS<br/>+ shadcn/ui"]
-    K --> M["Fontes: Inter + Playfair<br/>Cores: Rose + Slate"]
-    K --> N["Responsivo<br/>Mobile-first"]
-    
-    O["📱 Conversão"] --> P["Múltiplos CTAs<br/>WhatsApp Focus"]
-    O --> Q["Prova Social<br/>Testimonials + Stats"]
-    O --> R["Lead Magnet<br/>Curso Online"]
-    
-    S["🔍 SEO"] --> T["Meta Tags Completas"]
-    S --> U["Schema.org JSON-LD"] 
-    S --> V["Performance Otimizada"]
+- Componentes base em `src/components/ui`.
+- Para adicionar novos componentes, use o CLI do shadcn com Yarn (e o registry configurado via MCP):
+```bash
+yarn shadcn add button card input
 ```
+
+## 🚚 Deploy (GitHub Pages)
+
+- `astro.config.mjs` já define `site` e `base` (`/lp-website`).
+- Gere o build: `yarn build` → publica a pasta `dist/`.
+- Acesse em `https://entreospontosbordados.github.io/lp-website/`.
+
+## 📄 Licenças de Terceiros
+
+- Fontes em `public/fonts` devem respeitar suas licenças.
+- Imagens de exemplo (Unsplash) apenas para desenvolvimento.
+
+## 📚 Referências
+
+- Astro: `https://docs.astro.build/`
+- Tailwind CSS: `https://tailwindcss.com/`
+- shadcn/ui: `https://ui.shadcn.com/`
+- Lucide: `https://lucide.dev/`
